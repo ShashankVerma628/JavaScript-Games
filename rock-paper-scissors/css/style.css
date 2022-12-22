@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.body-main {
+    background-color: rgb(133, 160, 169);
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-main .container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.body-main .container .score-container {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.body-main .container .score-container #score {
+    font-size: 2rem;
+}
+
+.body-main .container .game-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-main .container .game-info-container>div {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.body-main .container .game-info-container>div .box{
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.body-main .container .game-info-container>div img {
+    max-width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+.body-main .container .btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.body-main .container .btn:hover {
+    transform: rotateY(180deg);
+}
+
+.body-main .container .btn img {
+    max-width: 200px;
+}
+
+.body-main .container .user-choice-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-main .container .btn.hide {
+    opacity: 0;
+    z-index: -1;
+}
